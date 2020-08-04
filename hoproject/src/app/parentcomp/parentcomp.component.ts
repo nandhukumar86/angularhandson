@@ -9,9 +9,16 @@ export class ParentcompComponent implements OnInit {
 
   favfood :string = "Pizza"
 
+  datafromchild: string = ""
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  FromChild($event)
+  {
+    this.datafromchild = $event
   }
 
 }

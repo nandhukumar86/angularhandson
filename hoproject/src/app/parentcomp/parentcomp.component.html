@@ -1,6 +1,6 @@
 <p>parentcomp works!</p>
 
 <input [(ngModel)]="favfood">
-      <label>{{favfood}}</label>
+Received from Chiild: {{datafromchild}}
 
-<app-childcomp favfood="{{favfood}}"></app-childcomp>
+<app-childcomp favfood="{{favfood}}" (emitteddata)="FromChild($event)"></app-childcomp>

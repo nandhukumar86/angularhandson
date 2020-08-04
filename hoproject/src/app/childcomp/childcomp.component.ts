@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-childcomp',
@@ -11,6 +11,13 @@ export class ChildcompComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  @Output() emitteddata = new EventEmitter();
+  
+  updateName() {
+    this.emitteddata.emit("Good one");
   }
 
 }
