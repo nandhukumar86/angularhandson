@@ -1,6 +1,23 @@
+
 <p>home works!</p>
 
-<button mat-stroked-button (click)="openSnackBar('Message', 'Submit')">Show snack-bar</button>
+<button matTooltip="Info about the action" mat-stroked-button (click)="openSnackBar('Message', 'Submit')">Show
+    snack-bar</button>
+
+<p>
+    <mat-toolbar color="primary">
+        <span>My Application</span>
+    </mat-toolbar>
+</p>
+
+<div class="overlay" *ngIf="showSpinner">
+    <div class="center">
+        <mat-progress-spinner diameter=50
+                              mode="indeterminate" 
+                              color="accent">
+        </mat-progress-spinner> 
+    </div>
+</div>
 
 
-
+  
