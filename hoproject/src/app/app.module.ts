@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,13 +13,17 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
 
 import {MatTreeModule} from '@angular/material/tree';
+import { ParentcompComponent } from './parentcomp/parentcomp.component';
+import { ChildcompComponent } from './childcomp/childcomp.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ParentcompComponent,
+    ChildcompComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,8 @@ import {MatTreeModule} from '@angular/material/tree';
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatTreeModule
+    MatTreeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
