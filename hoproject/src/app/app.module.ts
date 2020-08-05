@@ -15,6 +15,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatTreeModule} from '@angular/material/tree';
 import { ParentcompComponent } from './parentcomp/parentcomp.component';
 import { ChildcompComponent } from './childcomp/childcomp.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
 
 
 
@@ -36,7 +38,8 @@ import { ChildcompComponent } from './childcomp/childcomp.component';
     MatProgressSpinnerModule,
     MatDialogModule,
     MatTreeModule,
-    FormsModule
+    FormsModule,
+    ButtonsModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
