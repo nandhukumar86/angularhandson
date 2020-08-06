@@ -17,6 +17,8 @@ import { ParentcompComponent } from './parentcomp/parentcomp.component';
 import { ChildcompComponent } from './childcomp/childcomp.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 
+import { TreeViewModule } from '@progress/kendo-angular-treeview';
+
 
 
 
@@ -39,7 +41,8 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
     MatDialogModule,
     MatTreeModule,
     FormsModule,
-    ButtonsModule
+    ButtonsModule,
+    TreeViewModule
   ],
   providers: [],
   bootstrap: [HomeComponent]

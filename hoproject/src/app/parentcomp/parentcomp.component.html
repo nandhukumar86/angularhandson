@@ -4,3 +4,11 @@
 Received from Chiild: {{datafromchild}}
 
 <app-childcomp favfood="{{favfood}}" (emitteddata)="FromChild($event)"></app-childcomp>
+
+<kendo-treeview [nodes]="data" textField="text" [children]="fetchChildren" kendoTreeViewSelectable 
+    kendoTreeViewExpandable
+    (selectionChange)="handleSelection($event)" [hasChildren]="hasChildren">
+    <ng-template let-dataItem>
+        <div>{{dataItem.text}}</div>
+    </ng-template>
+</kendo-treeview>

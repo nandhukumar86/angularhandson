@@ -1,0 +1,14 @@
+ 
+  .k-treeview .k-i-collapse:before {
+    content: "\e013";
+  }
+                 
+  .k-treeview .k-i-expand:before {
+    content: "\e014";
+  }
+
+  .k-treeview .k-in.k-state-selected {
+    background-color: beige;
+    color: black;
+    font-style: italic;
+  }
